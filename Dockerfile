@@ -21,5 +21,7 @@ RUN apt-get update \
 WORKDIR /root/hellmud
 COPY . /root/hellmud
 
+VOLUME ["/root/hellmud/mudlib/data"]
+
 EXPOSE 1234
 CMD ["./bin/driver", "./bin/config.ini"]

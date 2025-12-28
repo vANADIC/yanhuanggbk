@@ -19,3 +19,4 @@
 ## 注意
 - 这是 GB 编码保持版，不建议直接混用 UTF-8 文件，避免混杂编码引起的显示或运行异常。  
 - 若需改端口或路径，同步调整 `bin/config.ini` 和启动脚本端口映射。
+- `run_local.sh` 会将宿主机的 `mudlib/data` 挂载到容器 `/root/hellmud/mudlib/data`，可通过环境变量 `HOST_DATA_DIR=/your/path` 指定外部数据目录以持久化存档。
