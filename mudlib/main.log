@@ -1,0 +1,192 @@
+Command: ./bin/driver ./bin/config.ini 
+========================================================================
+========================================================================
+Boot Time: Tue Apr 30 08:05:20 2019
+FluffOS Version: 3.0.20170907(git-e0481cd-1504810934)@ (Linux/x86-64)
+Jemalloc Version: 4.4.0-0-gf1f76357313e7dcad7262f17a48ff0a2e005fcdc
+========================================================================
+Core Dump: No, Max FD: 65535
+Processing config file: ./bin/config.ini
+==== Runtime Config Table ====
+time to clean up: 600 (new: 900)
+time to reset: 900 (new: 1800)
+time to swap: 300 (new: 900)
+evaluator stack size: 65536 (new: 6000)
+inherit chain size: 30
+maximum evaluation cost: 30000000
+maximum local variables: 50 (new: 20000)
+maximum call depth: 150 (new: 15000)
+maximum array size: 15000 (new: 25000)
+maximum buffer size: 400000
+maximum mapping size: 150000
+maximum string length: 200000 (new: 320000)
+maximum bits in a bitfield: 12000
+maximum byte transfer: 200000
+maximum read file size: 200000 (new: 320000)
+hash table size: 7001 (new: 30000)
+object table size: 1501 (new: 15000)
+living hash table size: 256 (new: 4096)
+gametick msec: 1000 (new: 100)
+heartbeat interval msec: 1000
+sane explode string: 1
+reversible explode string: 0
+sane sorting: 1
+warn tab: 0
+wombles: 0
+call other type check: 0
+call other warn: 0
+mudlib error handler: 1
+no resets: 0
+lazy resets: 0
+randomized resets: 1 (new: 0)
+no ansi: 1
+strip before process input: 1
+this_player in call_out: 1
+trace: 1
+trace code: 0
+interactive catch tell: 0
+receive snoop: 1
+snoop shadowed: 0
+reverse defer: 0
+has console: 1
+noninteractive stderr write: 0
+trap crashes: 1
+old type behavior: 0 (new: 1)
+old range behavior: 0 (new: 1)
+warn old range behavior: 1 (new: 0)
+suppress argument warnings: 1
+enable_commands call init: 1
+sprintf add_justified ignore ANSI colors: 1
+call_out(0) nest level: 1000
+==============================
+log/debug.log: No such file or directory
+Event backend in use: epoll
+==== LPC Predefines ====
+#define FLUFFOS 
+#define HAS_DEBUG_LEVEL 
+#define HAS_ED 
+#define HAS_PRINTF 
+#define MAX_FLOAT 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000
+#define MAX_INT 9223372036854775807
+#define MIN_FLOAT 0.000000
+#define MIN_INT -9223372036854775808
+#define MUDOS 
+#define MUD_NAME "HY-JHFY"
+#define SIZEOFINT 8
+#define __ARCH__ "Linux/x86-64"
+#define __ARGUMENTS_IN_TRACEBACK__ 
+#define __ARRAY_STATS__ 
+#define __AUTO_SETEUID__ 
+#define __CACHE_STATS__ 
+#define __CALLOUT_HANDLES__ 
+#define __CFG_COMPILER_STACK_SIZE__ 600
+#define __CFG_EVALUATOR_STACK_SIZE__ 65536
+#define __CFG_LIVING_HASH_SIZE__ 256
+#define __CFG_MAX_CALL_DEPTH__ 150
+#define __CFG_MAX_GLOBAL_VARIABLES__ 65536
+#define __CFG_MAX_LOCAL_VARIABLES__ 50
+#define __CLASS_STATS__ 
+#define __COMMAND_BUF_SIZE__ 2000
+#define __COMPILER__ "g++"
+#define __CXXFLAGS__ "-march=native -Wall -Wextra -Wformat -Werror=format-security -Werror=array-bounds -Wno-char-subscripts -Wno-sign-compare -Wno-return-type -Wno-unused-parameter -Wno-missing-field-initializers -Wno-overloaded-virtual -Wno-non-virtual-dtor -fdiagnostics-show-option -fmessage-length=0 -funsigned-char -fwrapv -O3 -funroll-loops -DNDEBUG -g -std=c++11 -D_GNU_SOURCE -fno-omit-frame-pointer -iquote. -flto -fPIE -pie -pthread   -I/usr/include "
+#define __DEBUG_MACRO__ 
+#define __DEFAULT_PRAGMAS__ PRAGMA_SAVE_TYPES + PRAGMA_ERROR_CONTEXT
+#define __ED_INDENT_SPACES__ 4
+#define __GET_CHAR_IS_BUFFERED__ 
+#define __HAS_CONSOLE__ 
+#define __LARGEST_PRINTABLE_STRING__ 8192
+#define __LARGE_STRING_SIZE__ 1000
+#define __LOCALS_IN_TRACEBACK__ 
+#define __MAX_SAVE_SVALUE_DEPTH__ 100
+#define __MUDLIB_ERROR_HANDLER__ 
+#define __NDEBUG__ 1
+#define __NO_LIGHT__ 
+#define __OLD_ED__ 
+#define __OLD_RANGE_BEHAVIOR__ 
+#define __OLD_TYPE_BEHAVIOR__ 
+#define __OPTIMIZATION__ "-O3 -funroll-loops"
+#define __PACKAGE_ASYNC__ 
+#define __PACKAGE_COMPRESS__ 
+#define __PACKAGE_CONTRIB__ 
+#define __PACKAGE_CORE__ 
+#define __PACKAGE_DEVELOP__ 
+#define __PACKAGE_EXTERNAL__ 
+#define __PACKAGE_MATH__ 
+#define __PACKAGE_MUDLIB_STATS__ 
+#define __PACKAGE_OPS__ 
+#define __PACKAGE_PCRE__ 
+#define __PACKAGE_SHA1__ 
+#define __PACKAGE_SOCKETS__ 
+#define __PACKAGE_TRIM__ 
+#define __PACKAGE_UIDS__ 
+#define __PORT__ 1234
+#define __RECEIVE_SNOOP__ 
+#define __REF_RESERVED_WORD__ 
+#define __RESTRICTED_ED__ 
+#define __SANE_EXPLODE_STRING__ 
+#define __SANE_SORTING__ 
+#define __SAVE_EXTENSION__ ".o"
+#define __SAVE_GZ_EXTENSION__ ".o.gz"
+#define __SMALL_STRING_SIZE__ 100
+#define __STRING_STATS__ 
+#define __STRUCT_CLASS__ 
+#define __STRUCT_STRUCT__ 
+#define __SUPPRESS_ARGUMENT_WARNINGS__ 
+#define __THIS_PLAYER_IN_CALL_OUT__ 
+#define __TRACE__ 
+#define __TRAP_CRASHES__ 
+#define __USE_32BIT_ADDRESSES__ 
+#define __VERSION__ "FluffOS 3.0.20170907 (git-e0481cd-1504810934)"
+========================
+simul_efun loaded successfully.
+master_ob loaded successfully.
+
+Loading preload files ...
+/adm/daemons/securityd...
+/adm/daemons/logind...
+/adm/daemons/virtuald...
+/adm/daemons/rankd...
+/adm/daemons/commandd...
+/adm/daemons/chinesed...
+/adm/daemons/emoted...
+/adm/daemons/aliasd...
+/adm/daemons/fingerd...
+/adm/daemons/channeld...
+/adm/daemons/natured...
+/adm/daemons/named...
+/adm/daemons/punishd...
+/adm/daemons/storyd...
+/adm/daemons/eventd...
+/adm/daemons/closed...
+/adm/daemons/pkd...
+/adm/daemons/memoryd...
+/adm/daemons/messaged...
+/adm/daemons/backupd...
+/adm/daemons/mapd...
+/adm/daemons/familyd...
+/adm/daemons/questd...
+/adm/daemons/cpud...
+/adm/daemons/invasion/invasiond...
+/adm/daemons/task/set_task...
+Accepting connections on 127.0.0.1:1234.
+Initializations complete.
+
+
+执行时段错误：*cannot bind an lfun fp to an object with a pending replace_program()
+
+程式：/inherit/misc/bboard.c 第 166 行
+物件：/clone/board/wuguan_b
+呼叫来自：/inherit/misc/bboard.c 的 do_post() 第 166 行，物件： /clone/board/wuguan_b ("郭府家丁留言板")
+./bin/driver(+0xc1765)[0x5565b5ab7765]
+/lib64/libc.so.6(+0x36280)[0x7f7bac64f280]
+/lib64/libc.so.6(epoll_wait+0x13)[0x7f7bac717463]
+/lib64/libevent-2.0.so.5(+0x24803)[0x7f7bad445803]
+/lib64/libevent-2.0.so.5(event_base_loop+0x14a)[0x7f7bad4313ea]
+./bin/driver(_Z7backendP10event_base+0x25e)[0x5565b5abee8e]
+./bin/driver(main+0x133)[0x5565b5a18963]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f7bac63b3d5]
+./bin/driver(+0x23f9a)[0x5565b5a19f9a]
+******** FATAL ERROR: SIGTERM: Process terminated
+FluffOS driver attempting to exit gracefully.
+crash() in master called successfully.  Aborting.
+Initializing internal stuff ....
