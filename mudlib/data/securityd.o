@@ -1,0 +1,3 @@
+#/adm/daemons/securityd.c
+grant (["quanzhen":({"mv","goto","where",}),"jzerohour":({"recover","mv","goto","where",}),"ygss":({"mv","goto","where",}),"huashan":({"mv","goto","where",}),"meroes":({"mv","goto","where",}),"kynei":({"mv","goto","where",}),"0":({"recover",}),"ahua":({"goto","mv","where",}),"jzerohourb":({"mv","goto",}),"yjj":({"mv","goto",}),"jzerohoura":({"mv",}),"tom":({"mv","where","goto",}),"jieyuee":({"mv","goto",}),"yjjj":({"mv","goto",}),"ygs":({"goto","where","mv",}),"reiyou":({"mv","goto","where",}),"ikaruga":({"mv","goto","where",}),"asdfafa":({"mv","goto","where",}),])
+site_privilege (["mud.ren":"Mxfx4wsq1GQeI",])
