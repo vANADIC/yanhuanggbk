@@ -1,5 +1,7 @@
-# Force amd64 base image because the bundled FluffOS driver binary is x86_64.
-FROM --platform=linux/amd64 ubuntu:20.04
+# Force amd64 by default because the bundled FluffOS driver binary is x86_64
+# (Intel/AMD). Override only if you have a compatible driver build.
+ARG TARGETPLATFORM=linux/amd64
+FROM --platform=${TARGETPLATFORM} ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
