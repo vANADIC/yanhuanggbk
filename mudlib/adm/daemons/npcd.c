@@ -192,9 +192,10 @@ void init_npc_skill(object ob, int exp)
 		else if (exp < 20000000)
 			sk_lvl = to_int(pow(to_float(exp*10), 1.0 / 3)) * 0.8;
 	    else
+
 			sk_lvl = to_int(pow(to_float(exp*10), 1.0 / 3)) * 0.9;
 		
-		ob->to_int(set("magic_points", sk_lvl * 20));
+		ob->set(to_int("magic_points", sk_lvl * 20));
 		if (sk_lvl >= 350)
 			ob->set("breakup", 1);
 		if (sk_lvl >= 500)
@@ -334,7 +335,7 @@ void set_from_me(object tob, object fob, int scale)
         my["max_jing"]   = to_int(my["max_jing"]);
         my["max_neili"]  = to_int(my["max_neili"]);
         my["neili"]      = to_int(my["max_neili"]);
-        
+
         tob->set_from_me(fob, scale);
 }
 
