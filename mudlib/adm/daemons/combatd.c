@@ -1106,6 +1106,8 @@ void fight(object me, object victim)
         int tempstr;
         tempstr = victim->query_str();
         debug_message(tempstr);
+        tempstr = to_int(tempstr * 3 / 4);
+        debug_message(tempstr);
 
         if (victim->is_busy() || ! living(victim))
         {
@@ -1121,7 +1123,7 @@ void fight(object me, object victim)
                 }
 
         // Else, see if we are brave enough to make an aggressive action.
-	} else if (me->query_str() > random(30)
+	} else if (me->query_str() > random(30))
         {
                 me->set_temp("guarding", 0);
                 if (! victim->is_fighting(me))
