@@ -37,8 +37,8 @@ int perform(object me, object target)
         if(me->query_skill("xuantie-jian", 1) < 160 )
                 return notify_fail("你的玄铁剑法还不够娴熟，使不出「迅雷击」。\n");
 
-        if(me->query_skill("surge-force", 1) < 160 )
-                return notify_fail("你的怒海狂涛修为不够，使不出「迅雷击」。\n");
+ //       if(me->query_skill("surge-force", 1) < 160 )
+ //               return notify_fail("你的怒海狂涛修为不够，使不出「迅雷击」。\n");
 
         if( (int)me->query_skill("force", 1) < 200 )
                 return notify_fail("你的内功等级不够，使不出「迅雷击」。\n");

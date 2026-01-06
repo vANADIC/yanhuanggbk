@@ -86,7 +86,7 @@ mapping *action = ({
 ]),
 });
 
-int valid_enable(string usage) { return usage == "club" || usage == "parry"; }
+int valid_enable(string usage) { return usage == "staff" || usage == "parry"; }
 
 int valid_learn(object me)
 {
@@ -96,8 +96,8 @@ int valid_learn(object me)
         if ((int)me->query_skill("force") < 50)
                 return notify_fail("你的内功火候太浅。\n");
 
-        if ((int)me->query_skill("club", 1) < (int)me->query_skill("zui-gun", 1))
-                return notify_fail("你的基本棍法水平有限，无法领会更高深的醉棍。\n");
+        if ((int)me->query_skill("staff", 1) < (int)me->query_skill("zui-gun", 1))
+                return notify_fail("你的基本杖法水平有限，无法领会更高深的醉棍。\n");
 
         return 1;
 }

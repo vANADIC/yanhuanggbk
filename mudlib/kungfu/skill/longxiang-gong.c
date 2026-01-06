@@ -98,7 +98,13 @@ int valid_learn(object me)
         if (me->query_skill("force", 1) < lvl)
                 return notify_fail("你的基本内功水平不够，难以修炼更深厚的龙象般若功。\n");
 
-        if ((int)me->query("max_neili", 1) < layer * 500)
+        if (layer < 5 && (int)me->query("max_neili", 1) < layer * 500)
+                return notify_fail("你的内力修为不够，难以修炼更深厚的龙象般若功。\n");
+
+		if (layer > 4 && (int)me->query("max_neili", 1) < 2000 + (layer - 4) * 1000)
+                return notify_fail("你的内力修为不够，难以修炼更深厚的龙象般若功。\n");
+
+		if (layer > 9 && (int)me->query("max_neili", 1) < 2000 + 6000 + (layer - 9) * 1500)
                 return notify_fail("你的内力修为不够，难以修炼更深厚的龙象般若功。\n");
 
         if ((int)me->query_skill("lamaism", 1) < 390 && me->query_skill("lamaism", 1) < layer * 25)
