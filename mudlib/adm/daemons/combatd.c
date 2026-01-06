@@ -1103,7 +1103,7 @@ void fight(object me, object victim)
 
         // If victim is busy or unconcious, always take the chance to make an attack.
 
-        int tempstr;
+        // int tempstr;
         string str = victim->query_str();
         // tempstr = to_int(str);
         // debug_message(sprintf("tempstr: %d",tempstr));
