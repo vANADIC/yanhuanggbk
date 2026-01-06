@@ -1117,7 +1117,7 @@ void fight(object me, object victim)
                 }
 
         // Else, see if we are brave enough to make an aggressive action.
-	} else if (me->query_str() * 100 > random(victim->query_str() * 3 / 4 * 100))
+	} else if (to_int(me->query_str()) > random(to_int(victim->query_str() * 3 / 4 )))
         {
                 me->set_temp("guarding", 0);
                 if (! victim->is_fighting(me))
