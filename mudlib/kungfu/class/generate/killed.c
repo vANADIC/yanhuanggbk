@@ -122,7 +122,11 @@ void set_from_me(object me)
         else
                 set_temp("dest_time", 600 + time());
 
-        
+        my["str"]       = to_int(my["str"]);
+        my["con"]       = to_int(my["con"]);
+        my["int"]       = to_int(my["int"]);
+        my["dex"]       = to_int(my["dex"]);
+
         my["qi"]         = to_int(my["qi"]);
         my["neili"]      = to_int(my["neili"]);
         my["jing"]       = to_int(my["jing"]);

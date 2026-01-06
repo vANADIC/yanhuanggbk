@@ -1103,13 +1103,6 @@ void fight(object me, object victim)
 
         // If victim is busy or unconcious, always take the chance to make an attack.
 
-        // int tempstr;
-        string str = victim->query_str();
-        // tempstr = to_int(str);
-        // debug_message(sprintf("tempstr: %d",tempstr));
-        // tempstr = to_int(tempstr * 3 / 4);
-        // debug_message(sprintf("tempstr: %d",tempstr));
-
         if (victim->is_busy() || ! living(victim))
         {
                 me->set_temp("guarding", 0);
@@ -1124,7 +1117,7 @@ void fight(object me, object victim)
                 }
 
         // Else, see if we are brave enough to make an aggressive action.
-	} else if (me->query_str() > random(30))
+	} else if (me->query_str() > random(victim->query_str() * 3 / 4))
         {
                 me->set_temp("guarding", 0);
                 if (! victim->is_fighting(me))
