@@ -26,7 +26,7 @@ int query_str()
         if (improve < (int) sk["hand"]) improve = sk["hand"];
         if (improve < (int) sk["claw"]) improve = sk["claw"];
 
-        return str + tat + to_int((improve / 10)) +query_temp("apply/str");
+        return str + tat + (improve / 10) +query_temp("apply/str");
 }
 
 int query_int()
@@ -44,7 +44,7 @@ int query_int()
 
         improve = (int)sk["literate"];
 
-        return str + tat + to_int((improve / 10)) + query_temp("apply/int");
+        return str + tat + (improve / 10) + query_temp("apply/int");
 }
 
 int query_con()
@@ -62,7 +62,7 @@ int query_con()
 
         improve = (int)sk["force"];
 
-        return str + tat + to_int((improve / 10)) + query_temp("apply/con");
+        return str + tat + (improve / 10) + query_temp("apply/con");
 }
 
 int query_dex()
@@ -80,7 +80,7 @@ int query_dex()
 
         improve = (int)sk["dodge"];
 
-        return str + tat + to_int((improve / 10)) + query_temp("apply/dex");
+        return str + tat + (improve / 10) + query_temp("apply/dex");
 }
 
 int query_per()
