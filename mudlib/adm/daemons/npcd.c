@@ -317,19 +317,19 @@ void set_from_me(object tob, object fob, int scale)
         my["int"] = tmpint;
 		my["per"] = 5 + random(25);
 		
-		my["max_qi"]     = hp_status["max_qi"]   * scale / 100;
-        my["eff_qi"]     = my["max_qi"];
-        my["qi"]         = my["max_qi"];
-        my["max_jing"]   = hp_status["max_jing"] * scale / 100;
-        my["eff_jing"]   = my["max_jing"];
-        my["jing"]       = my["max_jing"];
-        my["max_neili"]  = hp_status["max_neili"]* scale / 130;//适当减少NPC的最大内力，约为理论最大内力的77%，毕竟玩家很难保证内力吃满
-        my["jiali"]      = tob->query_skill("force") / 4;//适当减少NPC加力3->4
+		my["max_qi"]     = (int)hp_status["max_qi"]   * scale / 100;
+        my["eff_qi"]     = (int)my["max_qi"];
+        my["qi"]         = (int)my["max_qi"];
+        my["max_jing"]   = (int)hp_status["max_jing"] * scale / 100;
+        my["eff_jing"]   = (int)my["max_jing"];
+        my["jing"]       = (int)my["max_jing"];
+        my["max_neili"]  = (int)hp_status["max_neili"]* scale / 130;//适当减少NPC的最大内力，约为理论最大内力的77%，毕竟玩家很难保证内力吃满
+        my["jiali"]      = (int)tob->query_skill("force") / 4;//适当减少NPC加力3->4
 		//取消NPC最大内力上限9000的设定
         /*if (my["max_neili"] > 9000)
                 // max_neili not more then 9k
                 my["max_neili"] = 9000;*/
-        my["neili"]      = my["max_neili"];//取消NPC内力为2倍最大内力的设定
+        my["neili"]      = (int)my["max_neili"];//取消NPC内力为2倍最大内力的设定
 		
         tob->set_from_me(fob, scale);
 }

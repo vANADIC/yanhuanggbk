@@ -390,8 +390,7 @@ int heal_self()
                 // 内力不够充沛，打坐恢复
                 cost = my["max_neili"] - my["neili"];
                 if (cost > my["qi"] / 2) cost = my["qi"] / 2;
-                //sprintf("test")
-                //command(sprintf("dazuo %d", cost));
+                command(sprintf("dazuo %d", cost));
                 return 1;
         }
 
