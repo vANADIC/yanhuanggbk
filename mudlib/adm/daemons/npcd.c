@@ -317,15 +317,15 @@ void set_from_me(object tob, object fob, int scale)
         my["dex"] = tmpdex;
         my["int"] = tmpint;
 		my["per"] = 5 + random(25);
-        my["max_qi"]     = 100;
-        my["eff_qi"]     = 100;
-        my["qi"]         = 100;
-        my["max_jing"]   = 100;
-        my["eff_jing"]   = 100;
-        my["jing"]       = 100;
-        my["max_neili"]  = 100;
-        my["jiali"]      = 0;
-        my["neili"]      = 100;
+        // my["max_qi"]     = 100;
+        // my["eff_qi"]     = 100;
+        // my["qi"]         = 100;
+        // my["max_jing"]   = 100;
+        // my["eff_jing"]   = 100;
+        // my["jing"]       = 100;
+        // my["max_neili"]  = 100;
+        // my["jiali"]      = 0;
+        // my["neili"]      = 100;
 
 		
 	// 	my["max_qi"]     = hp_status["max_qi"] * scale / 100;
