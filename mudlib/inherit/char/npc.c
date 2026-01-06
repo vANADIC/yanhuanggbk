@@ -391,7 +391,7 @@ int heal_self()
                 cost = my["max_neili"] - my["neili"];
                 if (cost > my["qi"] / 2) cost = my["qi"] / 2;
                 sprintf("test")
-                command(sprintf("dazuo %d", cost));
+                //command(sprintf("dazuo %d", cost));
                 return 1;
         }
 
