@@ -123,15 +123,22 @@ void set_from_me(object me)
                 set_temp("dest_time", 600 + time());
 
         
-        my["max_qi"]     = to_int(my["max_qi"]);
-        my["eff_qi"]     = to_int(my["eff_qi"]);
         my["qi"]         = to_int(my["qi"]);
-        my["max_jing"]   = to_int(my["max_jing"]);
-        my["eff_jing"]   = to_int(my["eff_jing"]);
         my["jing"]       = to_int(my["jing"]);
-        my["max_neili"]  = to_int(my["max_neili"]);
+        my["jingli"]     = to_int(my["jingli"]);
         my["jiali"]      = to_int(my["jiali"]);
         my["neili"]      = to_int(my["neili"]);
+        my["magic_points"]  = to_int(my["magic_points"]);
+
+        my["eff_qi"]     = to_int(my["eff_qi"]);
+        my["eff_jing"]   = to_int(my["eff_jing"]);
+        my["eff_jingli"] = to_int(my["eff_jingli"]);
+
+        my["max_qi"]     = to_int(my["max_qi"]);
+        my["max_neili"]  = to_int(my["max_neili"]);
+        my["max_jing"]   = to_int(my["max_jing"]);
+
+
 }
 
 void kill_ob(object ob)
