@@ -1105,10 +1105,10 @@ void fight(object me, object victim)
 
         int tempstr;
         string str = victim->query_str();
-        tempstr = to_int(str);
-        debug_message(sprintf("tempstr: %d",tempstr));
-        tempstr = to_int(tempstr * 3 / 4);
-        debug_message(sprintf("tempstr: %d",tempstr));
+        // tempstr = to_int(str);
+        // debug_message(sprintf("tempstr: %d",tempstr));
+        // tempstr = to_int(tempstr * 3 / 4);
+        // debug_message(sprintf("tempstr: %d",tempstr));
 
         if (victim->is_busy() || ! living(victim))
         {
