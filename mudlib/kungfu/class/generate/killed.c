@@ -124,10 +124,10 @@ void set_from_me(object me)
 
         
         my["qi"]         = to_int(my["qi"]);
+        my["neili"]      = to_int(my["neili"]);
         my["jing"]       = to_int(my["jing"]);
         my["jingli"]     = to_int(my["jingli"]);
         my["jiali"]      = to_int(my["jiali"]);
-        my["neili"]      = to_int(my["neili"]);
         my["magic_points"]  = to_int(my["magic_points"]);
 
         my["eff_qi"]     = to_int(my["eff_qi"]);

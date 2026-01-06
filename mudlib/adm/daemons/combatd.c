@@ -1102,6 +1102,10 @@ void fight(object me, object victim)
 				SKILL_D(askill)->double_attack();
 
         // If victim is busy or unconcious, always take the chance to make an attack.
+        int tempstr,
+        tempstr = victim->query_str();
+        tempstr = to_int(tempstr * 3/4);
+
         if (victim->is_busy() || ! living(victim))
         {
                 me->set_temp("guarding", 0);
@@ -1116,8 +1120,7 @@ void fight(object me, object victim)
                 }
 
         // Else, see if we are brave enough to make an aggressive action.
-	} else
-        if (me->query_str() > random(victim->query_str() * 3 / 4))
+	} else if (me->query_str() > random(tempstr))
         {
                 me->set_temp("guarding", 0);
                 if (! victim->is_fighting(me))
