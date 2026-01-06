@@ -83,23 +83,23 @@ void set_from_me(object me)
                     my["max_qi"] += (x + 100 ) * (y + 100) / 100;
                 }
 
-            if (my["breakup"])
+        if (my["breakup"])
                 my["max_qi"] += my["max_qi"];
 
-		my["eff_qi"]     = my["max_qi"];
+        my["eff_qi"]     = my["max_qi"];
         my["qi"]         = my["max_qi"];
 
         my["max_jing"]   = 100;
-		my["max_jing"]  += (my["age"] - 14) * s * 2 / 3;
-		my["max_jing"]  += (int)my["max_jingli"] / 4;
-		if (my["breakup"])
-            my["max_jing"] += my["max_jing"];
-		if (my["animaout"])
+        my["max_jing"]  += (my["age"] - 14) * s * 2 / 3;
+        my["max_jing"]  += (int)my["max_jingli"] / 4;
+        if (my["breakup"])
+        my["max_jing"] += my["max_jing"];
+        if (my["animaout"])
             my["max_jing"] += my["max_jing"];
 
         my["eff_jing"]   = my["max_jing"];
         my["jing"]       = my["max_jing"];
-		my["eff_jingli"]   = my["max_jingli"];
+        my["eff_jingli"]   = my["max_jingli"];
         my["jingli"]       = my["max_jingli"];
         my["neili"]       = my["max_neili"];
         my["quest_count"] = me->query("quest_count");
@@ -121,6 +121,17 @@ void set_from_me(object me)
                 set_temp("dest_time", 900 + time());
         else
                 set_temp("dest_time", 600 + time());
+
+        
+        my["max_qi"]     = to_int(my["max_qi"]);
+        my["eff_qi"]     = to_int(my["eff_qi"]);
+        my["qi"]         = to_int(my["qi"]);
+        my["max_jing"]   = to_int(my["max_jing"]);
+        my["eff_jing"]   = to_int(my["eff_jing"]);
+        my["jing"]       = to_int(my["jing"]);
+        my["max_neili"]  = to_int(my["max_neili"]);
+        my["jiali"]      = to_int(my["jiali"]);
+        my["neili"]      = to_int(my["neili"]);
 }
 
 void kill_ob(object ob)

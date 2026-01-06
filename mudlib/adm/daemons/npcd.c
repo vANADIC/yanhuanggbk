@@ -317,6 +317,7 @@ void set_from_me(object tob, object fob, int scale)
         obj["dex"] = tmpdex;
         obj["int"] = tmpint;
         obj["per"] = 5 + random(25);
+
         my["max_qi"]     = hp_status["max_qi"]   * scale / 100;
         my["eff_qi"]     = my["max_qi"];
         my["qi"]         = my["max_qi"];
@@ -331,7 +332,7 @@ void set_from_me(object tob, object fob, int scale)
         //         my["max_neili"] = 9000;
         my["neili"]      = my["max_neili"];//取消NPC内力为2倍最大内力的设定
 
-        // tob->set_from_me(fob, scale);
+        tob->set_from_me(fob, scale);
 }
 
 // select a random 
